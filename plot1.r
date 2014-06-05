@@ -24,6 +24,6 @@ df$Date <- as.Date(df$Date, format="%d/%m/%Y")
 #create plot on screen device
 with(df, hist(Global_active_power, col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)"))
 #copy plot to PNG file
-dev.copy(png, filename="plot1.png", width=480, height=480, units="px")
+dev.copy(png, filename="plot1.png")
 #close PNG device
 dev.off()
